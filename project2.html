@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project 2: Infrastructure as Code Rollout by Jackson Hanks (LoopSafe-Dev)." />
+  <title>Project 2 | Infrastructure as Code Rollout</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">JH</span>
+        <span class="brand-text">
+          <strong>Jackson Hanks</strong>
+          <span class="muted">DevOps Engineer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <div id="navMenu" class="nav-menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="pill" href="project1.html">Project 1</a>
+        <a class="pill" href="project2.html">Project 2</a>
+        <a class="pill" href="project3.html">Project 3</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-banner" aria-label="Project image">
+        <!-- Inline SVG "image" so it works offline -->
+        <svg viewBox="0 0 1200 420" role="img" aria-label="Infrastructure as Code illustration">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="rgba(118,183,255,0.85)"/>
+              <stop offset="1" stop-color="rgba(58,160,255,0.10)"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="420" fill="url(#g2)"/>
+          <g fill="rgba(255,255,255,0.86)">
+            <text x="70" y="130" font-size="54" font-family="system-ui" font-weight="800">Infrastructure as Code Rollout</text>
+            <text x="70" y="185" font-size="22" font-family="system-ui" opacity="0.85">Versioned • Reviewable • Repeatable</text>
+          </g>
+          <g fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.55)" stroke-width="2">
+            <rect x="90" y="235" width="300" height="120" rx="18"/>
+            <rect x="450" y="235" width="300" height="120" rx="18"/>
+            <rect x="810" y="235" width="300" height="120" rx="18"/>
+          </g>
+          <g fill="rgba(255,255,255,0.86)" font-family="system-ui" font-weight="800">
+            <text x="150" y="305" font-size="22">Dev</text>
+            <text x="510" y="305" font-size="22">Stage</text>
+            <text x="875" y="305" font-size="22">Prod</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <main class="project-wrap">
+    <div class="container">
+      <div class="card">
+        <h1>Project 2: Infrastructure as Code Rollout</h1>
+        <p class="muted">
+          Goal: replace “clickops” with versioned infrastructure changes that can be reviewed, tested, and repeated.
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>What I Did</h3>
+        <ul class="checklist">
+          <li>Converted manual environment setup into IaC modules and reusable patterns.</li>
+          <li>Created environment separation (dev/stage/prod) with consistent naming and guardrails.</li>
+          <li>Introduced code review workflows for infrastructure changes.</li>
+          <li>Documented “how to deploy infra” so it’s not tribal knowledge.</li>
+        </ul>
+
+        <h3>Tech & Tools</h3>
+        <p class="muted">
+          Example stack: Terraform-style IaC, secure state handling patterns, and pipeline-driven apply plans.
+        </p>
+
+        <h3>Results (Example Outcomes)</h3>
+        <ul class="checklist">
+          <li>New environments can be provisioned faster and more consistently.</li>
+          <li>Infrastructure changes are traceable and easier to audit.</li>
+          <li>Reduced configuration drift over time.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="project-actions">
+          <a class="btn ghost" href="index.html#projects">← Back to Projects</a>
+          <button class="btn primary" type="button" data-share="project2">Share this project</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted small">© <span id="year"></span> Jackson Hanks • LoopSafe-Dev</p>
+      <div class="footer-links">
+        <a href="project1.html">← Previous</a>
+        <a href="project3.html">Next: Project 3 →</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

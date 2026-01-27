@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Project 1: CI/CD Pipeline Modernization by Jackson Hanks (LoopSafe-Dev)." />
+  <title>Project 1 | CI/CD Pipeline Modernization</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">JH</span>
+        <span class="brand-text">
+          <strong>Jackson Hanks</strong>
+          <span class="muted">DevOps Engineer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <div id="navMenu" class="nav-menu">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="pill" href="project1.html">Project 1</a>
+        <a class="pill" href="project2.html">Project 2</a>
+        <a class="pill" href="project3.html">Project 3</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="hero-banner" aria-label="Project image">
+        <svg viewBox="0 0 1200 420" role="img" aria-label="CI/CD pipeline illustration">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="rgba(118,183,255,0.95)"/>
+              <stop offset="1" stop-color="rgba(58,160,255,0.15)"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="420" fill="url(#g1)"/>
+          <g fill="rgba(255,255,255,0.85)">
+            <text x="70" y="130" font-size="54" font-family="system-ui" font-weight="800">CI/CD Pipeline Modernization</text>
+            <text x="70" y="185" font-size="22" font-family="system-ui" opacity="0.85">Build • Test • Scan • Deploy</text>
+          </g>
+          <g stroke="rgba(255,255,255,0.55)" stroke-width="3" fill="none">
+            <path d="M90 290 H1110" />
+            <circle cx="220" cy="290" r="24" fill="rgba(0,0,0,0.18)" />
+            <circle cx="480" cy="290" r="24" fill="rgba(0,0,0,0.18)" />
+            <circle cx="740" cy="290" r="24" fill="rgba(0,0,0,0.18)" />
+            <circle cx="1000" cy="290" r="24" fill="rgba(0,0,0,0.18)" />
+          </g>
+          <g fill="rgba(255,255,255,0.85)" font-family="system-ui" font-weight="700">
+            <text x="195" y="332" font-size="18">Build</text>
+            <text x="456" y="332" font-size="18">Test</text>
+            <text x="710" y="332" font-size="18">Scan</text>
+            <text x="965" y="332" font-size="18">Deploy</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <main class="project-wrap">
+    <div class="container">
+      <div class="card">
+        <h1>Project 1: CI/CD Pipeline Modernization</h1>
+        <p class="muted">
+          Goal: make delivery predictable and repeatable, with fewer “works on my machine” surprises.
+        </p>
+
+        <div class="divider"></div>
+
+        <h3>What I Did</h3>
+        <ul class="checklist">
+          <li>Standardized pipeline stages: build → unit tests → security scanning → release → deploy.</li>
+          <li>Reduced manual steps by automating versioning and release notes.</li>
+          <li>Introduced “quality gates” so risky changes get caught earlier.</li>
+          <li>Improved developer feedback loops with clearer pipeline logs and status reporting.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <div class="project-actions">
+          <a class="btn ghost" href="index.html#projects">← Back to Projects</a>
+          <button class="btn primary" type="button" data-share="project1">Share this project</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted small">© <span id="year"></span> Jackson Hanks • LoopSafe-Dev</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="project2.html">Next: Project 2 →</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
